@@ -1,0 +1,13 @@
+{
+  "name": "chapter-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watch --coverage --coverageReports=text"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1"
+  }
+}
