@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button testing figure rendered properly 1`] = `
+<div>
+  <figure>
+    <img
+      data-testid="image-test"
+    />
+    <figcaption
+      data-testid="figcaption-test"
+    >
+      <strong />
+    </figcaption>
+  </figure>
+</div>
+`;
