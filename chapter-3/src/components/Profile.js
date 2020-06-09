@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
 
 function Profile(props) {
     const [firstName, setFirstName] = useState('')
@@ -6,8 +8,8 @@ function Profile(props) {
     const [title, setTitle] = useState('')
     const [department, setDepartment] = useState('')
     const [pronoun, setPronoun] = useState('')
-    const [manager, setManager] = useState('')
-    const [timeZone, setTimeZone] = useState('')
+    const [manager, setManager] = useState(' ')
+    const [timeZone, setTimeZone] = useState(' ')
 
 
     const handleCancel = () => {
@@ -76,7 +78,7 @@ function Profile(props) {
                     </div>
                 </div>
                 <label htmlFor='firstName'>Pronoun </label>
-                <input
+                <select
                     name='pronoun'
                     className='form-control'
                     type='text'
@@ -84,27 +86,54 @@ function Profile(props) {
                     onChange={(e) => setPronoun(e.target.value)}
                     placeholder='Enter your pronoun here'
                     data-testid='pronoun'
-                />
-                <label htmlFor='firstName'>Manager </label>
-                <input
-                    name='manager'
+                >
+                    <option value='MALE'>He</option>
+                    <option value='FEMALE'>She</option>
+                    <option value='RATHER_NOT_SAY'>Rather not say</option>
+                    <option value='NEUTRAL'>Neutral</option>
+                </select>
+                <label htmlFor='manager' >Manager </label>
+                <Select
+                    id='manager'
                     className='form-control'
-                    type='text'
                     value={manager}
                     onChange={(e) => setManager(e.target.value)}
-                    placeholder='Enter your manager here'
                     data-testid='manager'
-                />
+                >
+                    <MenuItem value=' '>
+                        Select One
+                    </MenuItem>
+                    <MenuItem value='user1'>
+                        <img data-testid='manager-image' height='25' className='mr-2' src='https://img.icons8.com/officel/2x/user.png' />
+                        User 1
+                    </MenuItem>
+                    <MenuItem value='user2'>
+                        <img data-testid='manager-image' height='25' className='mr-2' src='https://img.icons8.com/officel/2x/user.png' />
+                        User 2
+                    </MenuItem>
+                    <MenuItem value='user3'>
+                        <img data-testid='manager-image' height='25' className='mr-2' src='https://img.icons8.com/officel/2x/user.png' />
+                        User 3
+                    </MenuItem>
+                    <MenuItem value='user4'>
+                        <img data-testid='manager-image' height='25' className='mr-2' src='https://img.icons8.com/officel/2x/user.png' />
+                        User 4
+                    </MenuItem>
+                </Select>
                 <label htmlFor='firstName'>Time Zone </label>
-                <input
-                    name='timeZone'
+                <Select
                     className='form-control'
-                    type='text'
                     value={timeZone}
                     onChange={(e) => setTimeZone(e.target.value)}
-                    placeholder='Enter your time zone here'
                     data-testid='timeZone'
-                />
+                >
+                    <MenuItem value=' '>
+                        Select One
+                    </MenuItem>
+                    <MenuItem value='asia/dhaka'>
+                        Asia/Dhaka
+                    </MenuItem>
+                </Select>
                 <button className='btn btn-light mt-2' onClick={handleCancel}>Cancel</button>
                 <button className='btn btn-primary mt-2' onClick={handleDone}>Done</button>
             </div>

@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile form test form is rendered properly? 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="col-8 mx-auto mt-2"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-6"
+        >
+          <label
+            for="firstName"
+          >
+            First Name 
+          </label>
+          <input
+            class="form-control"
+            data-testid="firstName"
+            name="firstName"
+            placeholder="Enter your first name here"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="col-6"
+        >
+          <label
+            for="firstName"
+          >
+            Last Name 
+          </label>
+          <input
+            class="form-control"
+            data-testid="lastName"
+            name="lastName"
+            placeholder="Enter your last name here"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-6"
+        >
+          <label
+            for="firstName"
+          >
+            Title 
+          </label>
+          <input
+            class="form-control"
+            data-testid="title"
+            name="title"
+            placeholder="Enter your first name here"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="col-6"
+        >
+          <label
+            for="firstName"
+          >
+            Department 
+          </label>
+          <input
+            class="form-control"
+            data-testid="department"
+            name="department"
+            placeholder="Enter your department here"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <label
+        for="firstName"
+      >
+        Pronoun 
+      </label>
+      <select
+        class="form-control"
+        data-testid="pronoun"
+        name="pronoun"
+        placeholder="Enter your pronoun here"
+        type="text"
+      >
+        <option
+          value="MALE"
+        >
+          He
+        </option>
+        <option
+          value="FEMALE"
+        >
+          She
+        </option>
+        <option
+          value="RATHER_NOT_SAY"
+        >
+          Rather not say
+        </option>
+        <option
+          value="NEUTRAL"
+        >
+          Neutral
+        </option>
+      </select>
+      <label
+        for="manager"
+      >
+        Manager 
+      </label>
+      <div
+        class="MuiInputBase-root MuiInput-root MuiInput-underline form-control"
+        data-testid="manager"
+      >
+        <div
+          aria-haspopup="listbox"
+          aria-labelledby="manager"
+          class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+          id="manager"
+          role="button"
+          tabindex="0"
+        >
+          Select One
+        </div>
+        <input
+          type="hidden"
+          value=" "
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSelect-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </div>
+      <label
+        for="firstName"
+      >
+        Time Zone 
+      </label>
+      <div
+        class="MuiInputBase-root MuiInput-root MuiInput-underline form-control"
+        data-testid="timeZone"
+      >
+        <div
+          aria-haspopup="listbox"
+          class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+          role="button"
+          tabindex="0"
+        >
+          Select One
+        </div>
+        <input
+          type="hidden"
+          value=" "
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSelect-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </div>
+      <button
+        class="btn btn-light mt-2"
+      >
+        Cancel
+      </button>
+      <button
+        class="btn btn-primary mt-2"
+      >
+        Done
+      </button>
+    </div>
+  </div>
+</div>
+`;
