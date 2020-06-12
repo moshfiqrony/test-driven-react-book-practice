@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 // import App from './App';
-import App2 from './App2';
+// import App2 from './App2';
+import App2 from './components/ApiCallMock';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

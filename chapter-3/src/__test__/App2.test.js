@@ -1,13 +1,7 @@
 import { render, fireEvent, waitFor, screen, wait } from '@testing-library/react'
 import React from 'react'
 import Profile from '../components/Profile';
-import 'babel-polyfill'
 
-const flushPromises = () => {
-    return new Promise(resolve => {
-      setTimeout(resolve, 0);
-    })
-  }
 
 describe('Profile form test', () => {
     test('form is rendered properly?', () => {
@@ -81,4 +75,22 @@ describe('Profile form test', () => {
         fireEvent.click(screen.getByText('Asia/Dhaka'))
         expect(getByTestId('timeZone').querySelector('input').value).toBe('asia/dhaka')
     })
+})
+
+describe('buttons test', () => {
+    test('button rendered correctly', () => {
+        const {getByText} = render(<Profile/>)
+        const done = getByText('Done')
+        const handleDone = jest.fn()
+        done.onclick = handleDone
+
+
+
+
+        expect(getByText('Done').type).toBe('submit')
+        expect(getByText('Cancel').type).toBe('submit')
+    })
+
+
+    test('')
 })
