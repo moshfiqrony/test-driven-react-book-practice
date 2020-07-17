@@ -21,3 +21,29 @@ describe('API Call axios mock testing', () => {
 
     })
 })
+
+describe('API Call axios mock testing', () => {
+
+    test('Component rendered successfully', async () => {
+        axios.get
+        .mockImplementationOnce(() => Promise.resolve({
+            status: 200,
+            data: {
+                name: 'Rony',
+                email: 'rony@example.com'
+            }
+        }))
+        .mockImplementationOnce(() => Promise.resolve({
+            status: 202,
+            data: {
+                name: 'Rony',
+                email: 'rony@mock.com'
+            }
+        }))
+        .mockImplementationOnce(() => Promise.resolve({
+            status: 400,
+            data: null
+        }))
+        
+    })
+})
